@@ -12,8 +12,6 @@ func main() {
 
 	m.HandleFunc("/", handlePage)
 
-        os.Getenv()
-
 	const addr = ":8080"
 	srv := http.Server{
 		Handler:      m,
